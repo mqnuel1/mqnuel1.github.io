@@ -10,14 +10,14 @@
             padding: 0;
             text-align: center;
             background-image: url("arboles.png");
-            background-size: cover;  /* se ajusta a la pantalla */
-            background-position: center; /* centrada */
-            background-attachment: fixed; /* efecto fijo al hacer scroll */
-            color: white; /* texto visible sobre el fondo */
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            color: white; 
         }
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* proporción 16:9 */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
             max-width: 100%;
@@ -32,13 +32,18 @@
         }
         img {
             margin-top: 20px;
-            max-width: 90%; /* que se ajuste al celular */
+            max-width: 40%;
             height: auto;
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); 
+            border-radius: 10px; 
         }
         h1 {
-            font-size: clamp(20px, 5vw, 40px); /* ajusta tamaño en PC y cel */
+            font-size: clamp(20px, 5vw, 40px); 
             margin-top: 15px;
-            text-shadow: 2px 2px 5px black; /* sombra para que resalte en el fondo */
+            text-shadow: 2px 2px 5px black;
         }
     </style>
 </head>
