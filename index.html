@@ -7,25 +7,48 @@
     <style>
         body {
             background-color: rgb(107, 40, 40);
-            text-align: center; /* centra todo */
+            text-align: center;
+            margin: 0;
+            padding: 0;
         }
-        iframe {
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* proporción 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        img {
             margin-top: 20px;
-            border-radius: 12px;
+            max-width: 100%;
+            height: auto;
+        }
+        h1 {
+            font-size: clamp(20px, 5vw, 40px); /* ajusta tamaño en PC y cel */
         }
     </style>
 </head>
 <body>
     <h1>MANO PERDÓNAME 😞😞</h1>
 
-    <!-- Video de YouTube -->
-    <iframe width="800" height="450"
-        src="https://www.youtube.com/embed/GDuJCcZgcMI?autoplay=1"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-    </iframe>
+    <!-- Video responsivo -->
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/GDuJCcZgcMI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
 
     <img src="yotetanomusho.png" alt="Descripción de la imagen" width="200">
 </body>
