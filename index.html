@@ -9,15 +9,15 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            background-image: url("fondo.jpg");
-            background-size: cover;  
-            background-position: center;
-            background-attachment: fixed;
-            color: white;
+            background-image: url("arboles.jpg"); /* 🔹 cambia por la imagen que quieras */
+            background-size: cover;  /* se ajusta a la pantalla */
+            background-position: center; /* centrada */
+            background-attachment: fixed; /* efecto fijo al hacer scroll */
+            color: white; /* texto visible sobre el fondo */
         }
         .video-container {
             position: relative;
-            padding-bottom: 56.25%;
+            padding-bottom: 56.25%; /* proporción 16:9 */
             height: 0;
             overflow: hidden;
             max-width: 100%;
@@ -32,19 +32,20 @@
         }
         img {
             margin-top: 20px;
-            max-width: 90%;
+            max-width: 90%; /* que se ajuste al celular */
             height: auto;
         }
         h1 {
-            font-size: clamp(20px, 5vw, 40px);
+            font-size: clamp(20px, 5vw, 40px); /* ajusta tamaño en PC y cel */
             margin-top: 15px;
-            text-shadow: 2px 2px 5px black;
+            text-shadow: 2px 2px 5px black; /* sombra para que resalte en el fondo */
         }
     </style>
 </head>
 <body>
     <h1>MANO PERDÓNAME 😞😞</h1>
 
+    <!-- Video responsivo -->
     <div class="video-container">
         <iframe 
             src="https://www.youtube.com/embed/GDuJCcZgcMI"
@@ -55,6 +56,7 @@
         </iframe>
     </div>
 
+    <!-- Imagen debajo -->
     <img src="yotetanomusho.png" alt="Descripción de la imagen">
 </body>
 </html>
